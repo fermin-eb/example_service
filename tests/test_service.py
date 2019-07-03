@@ -34,6 +34,6 @@ class TestServiceCall(ServerTestCase):
         self.assertEqual(pysoa.__version__, response.body['pysoa'])
         self.assertEqual([], response.body['healthcheck']['errors'])
         self.assertEqual(
-            [('TURBOENCABULATOR_SPACE', 'Turboencabulator has less than 5% space left')],
+            [['TURBOENCABULATOR_SPACE', 'Turboencabulator has less than 5% space left']],
             response.body['healthcheck']['warnings']
         )

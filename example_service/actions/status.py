@@ -27,7 +27,7 @@ class StatusAction(BaseStatusAction):
     _version = example_service.__version__
 
     # Structure all your health checks as separate methods for readability
-    def check_turboencabulator(self):
+    def check_turboencabulator(self, request):
         """
         Tests that we have a valid session to the turboencabulator.
         """
