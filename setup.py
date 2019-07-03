@@ -13,9 +13,9 @@ def readme():
 
 # Put your requirements for installation here. Try to use the ~= operator where possible for dependencies, which will
 # allow bug fix releases in that branch. For example, "conformity~=1.12" allows anything up to but not including 2.0,
-# while "pysoa~=0.38.1" allows anything up to but not including 0.39.0.
+# while "pysoa~=0.62.1" allows anything up to but not including 0.39.0.
 install_requires = [
-    'pysoa~=0.38.1',
+    'pysoa~=0.62.1',
     'conformity~=1.12',
 ]
 

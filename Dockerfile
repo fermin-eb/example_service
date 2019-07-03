@@ -18,7 +18,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN pip3 install --upgrade pip setuptools flake8 ipdb
+RUN pip3 install --upgrade pip setuptools flake8 ipdb pytz
 
 ENV PYSOA_SETTINGS_MODULE example_service.settings.dev
 
