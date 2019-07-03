@@ -5,7 +5,7 @@ from pysoa.server import server
 from example_service.actions.call_service import CallServiceAction
 from example_service.actions.square import SquareAction
 from example_service.actions.status import StatusAction
-
+from example_service.actions.wop import WopAction
 
 class Server(server.Server):
     """
@@ -33,6 +33,7 @@ class Server(server.Server):
         'status': StatusAction,
         'call_service': CallServiceAction,
         'square': SquareAction,
+        'wop': WopAction
     }
 
     def setup(self):

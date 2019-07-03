@@ -37,3 +37,10 @@ class TestServiceCall(ServerTestCase):
             [['TURBOENCABULATOR_SPACE', 'Turboencabulator has less than 5% space left']],
             response.body['healthcheck']['warnings']
         )
+    
+    def test_wop(self):
+        """
+        Tests that the "wop" action works
+        """
+        response = self.call_action('wop', body={'amazing': 2})
+        self.assertEqual('wopwop', response.body['wop'])
